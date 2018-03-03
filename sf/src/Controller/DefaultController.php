@@ -16,6 +16,7 @@ class DefaultController extends Controller
             <h1>New content!</h1>
             <h1>Some newer content</h1>
             <h1>Even newer content</h1>
+            <h1>yes, newest content!</h1>
             <h2>Refresh to get your lucky number</h2><h1>Lucky number: '.$number.'</h1></body></html>'
         );
     }
