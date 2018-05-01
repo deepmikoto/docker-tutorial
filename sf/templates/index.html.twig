@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- fav icon -->
+    <!-- custom -->
+    <link href="/css/style.css" rel="stylesheet">
+{% endblock %}
+{% block body %}
+    <header class="preview-header">
+        <div id="fullscreen-banner" style="height: 920px;">
+            <div class="displaTable">
+                <div class="displayTableCell">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="preview-title">
+                                    <h1><span>Refresh</span> to get your lucky number</h1>
+                                    <p>The odds of hitting the same number twice are low</p>
+                                    <h1 class="text-center"><span>{{ number }}</span></h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock %}
+{% block javascripts %}
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+{% endblock %}
